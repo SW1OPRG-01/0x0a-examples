@@ -1,0 +1,25 @@
+@startuml car
+
+hide circle
+left to right direction
+
+class Engine {
+    -horsepower: int
+    -type: String
+    +start(): void
+    +stop(): void
+}
+
+class Car {
+    -make: String
+    -model: String
+    -year: int
+    -engine: Engine
+    +drive(): void
+    +brake(): void
+    +startCar(): void
+}
+
+Car *-- Engine
+
+@enduml

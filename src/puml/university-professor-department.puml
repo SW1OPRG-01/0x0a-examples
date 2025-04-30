@@ -1,0 +1,19 @@
+@startuml university-professor-department
+
+hide circle
+left to right direction
+
+class University {
+}
+
+class Department {
+}
+
+class Professor {
+}
+
+Professor --> University : works at
+
+Department "1" *-- "0..*" Professor : employs
+
+@enduml
